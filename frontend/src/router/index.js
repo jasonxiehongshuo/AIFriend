@@ -26,11 +26,7 @@ const router = createRouter({
       component:CreateIndex,
       name:'create-index'
     },
-    {
-      path:'/404/',
-      component:NotFoundIndex,
-      name:'notfound-index'
-    },
+
     {
       path:'/user/account/login/',
       component:LoginIndex,
@@ -45,6 +41,11 @@ const router = createRouter({
       path:'/user/space/:user_id/',
       component:SpaceIndex,
       name:'user-space-index'
+    },
+    {
+      path:'/404/',
+      component:NotFoundIndex,
+      name:'notfound-index'
     },
       {
       path:'/user/profile/',
