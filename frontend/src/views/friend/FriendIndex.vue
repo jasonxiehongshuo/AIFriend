@@ -3,7 +3,7 @@
 </script>
 
 <template>
-朋友
+    好友
 </template>
 
 <style scoped>
