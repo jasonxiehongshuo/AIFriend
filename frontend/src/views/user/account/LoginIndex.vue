@@ -38,7 +38,7 @@ async function handleLogin(){
           errorMessage.value = data.result
         }
       } catch (err) {
-        console.log(err)
+
       }
 
   }
@@ -50,10 +50,10 @@ async function handleLogin(){
   <div class="flex justify-center mt-30">
     <form @submit.prevent="handleLogin" class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
   <label class="label">用户名</label>
-  <input v-model="username" type="text" class="input" placeholder="用户名" />
+  <input v-model="username" type="text" class="input" placeholder="用户名"  autocomplete="username" />
 
   <label class="label">密码</label>
-  <input v-model="password" type="password" class="input" placeholder="密码" />
+  <input v-model="password" type="password" class="input" placeholder="密码" autocomplete="current-password" />
 
   <p v-if="errorMessage" class="text-sm text-red-500 mt-1">{{errorMessage}}</p>
   <button class="btn btn-neutral mt-4">登录</button>
